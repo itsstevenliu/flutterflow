@@ -15,6 +15,7 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:uuid/uuid.dart';
 
 // THIS CODE ALLOWS CUSTOM FIREBASE PATH AND MAINTAINS THE ORIGINAL NAME OF THE FILE + UID SO SAME NAMED FILES ARE NOT OVERWRITTEN
+// original code amended to my needs: https://legacy-community.flutterflow.io/c/community-custom-widgets/generic-multi-file-uploader-using-file_picker-package
 
 Future<List<String>?> uploadFilesFINAL(String orgid) async {
   final files = await FilePicker.platform.pickFiles(
