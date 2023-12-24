@@ -16,7 +16,7 @@ exports.stripeWebhook = functions.region('us-central').
         const endpointSecret = '##############'; // ACTUAL ENDPOINT SECRET HERE
         const event = stripe.webhooks.constructEvent(req.rawBody, sig, endpointSecret);
 
-        if (event.type === 'checkout.session.completed') {
+        if (event.type === 'checkout.session.completed') { ////event is session.completed
             // Handle checkout session completed event
             const dataObject = event.data.object;
 
