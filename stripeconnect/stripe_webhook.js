@@ -4,8 +4,8 @@ const admin = require('firebase-admin');
 
 const stripe = require('stripe')('##############'); //YOUR STRIPE KEY HERE
 
-// Change Region to your GCP resource location and add async to the function
-exports.stripeWebhook = functions.region('us-central').
+// Change Region to your GCP resource location 
+exports.stripeWebhook = functions.region('us-central'). 
 	runWith({
 		memory: '128MB'
   }).https.onRequest( async  (req, res) => {
