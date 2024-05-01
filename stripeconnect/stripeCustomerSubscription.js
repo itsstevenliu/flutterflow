@@ -15,6 +15,7 @@ exports.stripeCustomerSubscription = functions.https.onRequest(async (req, res) 
         const event = stripe.webhooks.constructEvent(req.rawBody, sig, endpointSecret);
 
         if (event.type === 'customer.subscription.created') {
+            const dataObject = event.data.object;
             // Write what you need it to do here
         }
 
