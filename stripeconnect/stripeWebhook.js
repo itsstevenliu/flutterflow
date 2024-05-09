@@ -7,7 +7,7 @@ const admin = require('firebase-admin');
 
 const stripe = require('stripe')('XXXXXX'); //replace with actual key
 
-exports.stripeCustomerSubscription = functions.https.onRequest(async (req, res) => {
+exports.stripeWebhook = functions.https.onRequest(async (req, res) => {
     try {
         const sig = req.headers['stripe-signature'];
         const endpointSecret = 'XXXXXX'; // Replace with your actual endpoint secret
