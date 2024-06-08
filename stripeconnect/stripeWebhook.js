@@ -2,8 +2,8 @@ const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 // To avoid deployment errors, do not call admin.initializeApp() in your code
 
-// Source: https://www.youtube.com/@itsStevenLiu 
-// https://itsstevenliu.carrd.co/
+// Source: https://www.youtube.com/@StevenNoCode 
+// https://hundredacretech.com/
 
 const stripe = require('stripe')('XXXXXX'); //replace with actual key
 
