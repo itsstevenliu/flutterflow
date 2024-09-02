@@ -4,6 +4,7 @@ const admin = require('firebase-admin');
 
 // Source: https://www.youtube.com/@StevenNoCode 
 // https://hundredacretech.com/
+// get the full app and code here: https://itsstevenliu.gumroad.com/l/stripesubscription
 
 const stripe = require('stripe')('XXXXXX'); //replace with actual key
 
