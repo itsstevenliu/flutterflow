@@ -10,7 +10,7 @@ exports.myScheduledCloudFunction = functions.pubsub.schedule('0 * * * *')
   .timeZone('Australia/Sydney')
   .onRun(async (context) => { 
     console.log("CRON job started running");
-
+    // example below sends push notification to user every day at 9am
     try {
       // Define the static quote
       const staticQuote = {
