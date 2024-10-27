@@ -36,7 +36,7 @@ exports.myScheduledCloudFunction = functions.pubsub.schedule('0 * * * *')
             const notificationData = {
               notification_title: staticQuote.title,
               notification_text: staticQuote.body,
-              initial_page_name: "HabitsNew",
+              initial_page_name: "Habits", // nanvigate to habits page when clicked on push notification banner
               notification_sound: "default",
               target_audience: "All",
               user_refs: `/${doc.ref.path}`, 
