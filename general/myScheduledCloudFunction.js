@@ -39,7 +39,7 @@ exports.myScheduledCloudFunction = functions.pubsub.schedule('0 * * * *')
               initial_page_name: "HabitsNew",
               notification_sound: "default",
               target_audience: "All",
-              user_refs: `/${doc.ref.path}`, // Add '/' in front of the path
+              user_refs: `/${doc.ref.path}`, 
               timestamp: admin.firestore.FieldValue.serverTimestamp()
             };
 
