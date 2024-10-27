@@ -1,0 +1,24 @@
+// https://youtube.com/@StevenNoCode
+
+// Automatic FlutterFlow imports
+import '/backend/backend.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
+import '/custom_code/actions/index.dart'; // Imports other custom actions
+import '/flutter_flow/custom_functions.dart'; // Imports custom functions
+import 'package:flutter/material.dart';
+// Begin custom action code
+// DO NOT REMOVE OR MODIFY THE CODE ABOVE!
+
+import 'package:flutter_timezone/flutter_timezone.dart';
+
+Future<String?> timeZone() async {
+  String? timeZoneName;
+  try {
+    timeZoneName = await FlutterTimezone.getLocalTimezone();
+    return timeZoneName;
+  } catch (e) {
+    print('Could not get the local timezone from device');
+    return null;
+  }
+}
