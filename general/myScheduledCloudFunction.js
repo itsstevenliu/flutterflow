@@ -6,7 +6,7 @@ const admin = require('firebase-admin');
 const moment = require('moment-timezone');
 
 // At every minute. set the timezone you want to run the cloud function based on. hourly is 0 * * * * 
-exports.myScheduledCloudFunction = functions.pubsub.schedule('* * * * *').timeZone('Australia/Sydney').onRun(async (context) => { 
+exports.myScheduledCloudFunction = functions.pubsub.schedule('0 * * * *').timeZone('Australia/Sydney').onRun(async (context) => { 
   console.log("CRON job started running");
   // insert own code to do whatever you want. For exmaple below sends a push notification to the user using FF's push notification system. Push must be enabled from FF.
  try {
