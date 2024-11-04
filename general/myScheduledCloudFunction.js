@@ -1,5 +1,4 @@
 // https://youtube.com/@StevenNoCode
-// video on example use case: https://www.youtube.com/watch?v=R9an74QQFkU
 
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
